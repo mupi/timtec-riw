@@ -22,8 +22,8 @@ TEMPLATE_DEBUG = DEBUG
 
 SITE_ID = 1
 SITE_HOME = ''
-SITE_NAME = 'Tecnologia para Sala de Aula'
-SITE_DOMAIN = 'tecsaladeaula.com.br'
+SITE_NAME = 'Curso Read in Web'
+SITE_DOMAIN = 'readinweb.org'
 
 ADMINS = (
     ('anarute', 'anarute@mupi.me'),
@@ -33,11 +33,11 @@ ADMINS = (
 MANAGERS = (ADMINS[1],)
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-EMAIL_HOST = 'tecsaladeaula.com.br'
-DEFAULT_FROM_EMAIL = 'contato@mupi.me'
-CONTACT_RECIPIENT_LIST = ['contato@mupi.me', ]
-EMAIL_SUPPORT = 'suporte@mupi.me'
-EMAIL_ACTIVITIES = 'atividades@mupi.me'
+EMAIL_HOST = 'readinweb.org'
+DEFAULT_FROM_EMAIL = 'suporte@readinweb.org'
+CONTACT_RECIPIENT_LIST = ['suporte@readinweb.org', ]
+EMAIL_SUPPORT = 'suporte@readinweb.org'
+EMAIL_ACTIVITIES = 'suporte@readinweb.org'
 
 TERMS_ACCEPTANCE_REQUIRED = True
 
