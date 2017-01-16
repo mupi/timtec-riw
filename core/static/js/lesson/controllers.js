@@ -218,15 +218,15 @@
 
             $scope.lesson_url();
             $scope.disqusConfig = {
-              disqus_shortname: 'tecsaladeaula',
+              disqus_shortname: 'curso-read-in-web',
               disqus_identifier: $scope.c_unit,
               disqus_url: $scope.lesson_url(),
-              disqus_title: 'Mupi - Tecnologia para Sala de Aula'
+              disqus_title: 'Curso Read in Web'
             };
 
             $scope.updatedisqusConfig = function(unit, title) {
               $scope.disqusConfig = {
-                disqus_shortname: 'tecsaladeaula',
+                disqus_shortname: 'curso-read-in-web',
                 disqus_identifier: unit,
                 disqus_url: $scope.lesson_url(),
                 disqus_title: title
