@@ -63,14 +63,8 @@
                 </li>
             {% else %}
                 <li>
-                    <a class="dropdown-toggle sign-in" data-toggle="dropdown" href="#">{% trans 'Sign In' %}</a>
+                    <a class="dropdown-toggle sign-up" data-toggle="dropdown" href="#">{% trans 'Sign In' %}</a>
                     {% include '_login_modal.html' %}
-                </li>
-                <li>
-                    {% block header_signup_link %}
-                        <a class="dropdown-toggle sign-up" data-toggle="dropdown" href="#">{% trans 'Sign Up' %}</a>
-                        {% include '_signup_modal.html' %}
-                    {% endblock %}
                 </li>
             {% endif %}
             </ul>

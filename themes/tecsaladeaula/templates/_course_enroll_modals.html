@@ -10,18 +10,17 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <p>Para concluir sua inscrição você deverá realizar o pagamento através do PagSeguro. Assim que seu pagamento for concluído, nós liberaremos o seu acesso.</p>
-                    </div>
-                    <div class="col-sm-6">
-                         <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
-                        <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
-                        <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
-                        <input type="hidden" name="itemCode" value="{{ course.payment_url }}" />
-                        <input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/209x48-pagar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
-                        </form>
-                        <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
-                        <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+                    <div class="col-xs-12">
+                        <p>
+                          Se você já realizou o pagamento, não se preocupe em poucos instantes o seu acesso será liberado.
+                          Assim que seu pagamento for aprovado, nós liberaremos o seu acesso.
+                        </p>
+                        <p>
+                          Caso esteja com problemas para finalizar a inscrição, envie um email para <em>inscricoes@readinweb.org</em>
+                        </p>
+                        <p>
+                          Desejamos um ótimo curso!
+                        </p>
                     </div>
                 </div>
                 <!-- NEEDS FIX
@@ -31,11 +30,6 @@
                         <p>{{ course.registration_number }}</p>
                     </div>
                 </div> -->
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-xs-12">
-                        <p>Caso possua alguma dúvida, entre em contato conosco através do email <i>contato@mupi.me</i></p>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

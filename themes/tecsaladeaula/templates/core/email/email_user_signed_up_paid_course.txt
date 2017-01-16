@@ -1,14 +1,10 @@
-Oi {{ username }},
+Olá {{ username }},
 
-Você se inscreveu em nosso curso {{ course_name }}. 
-Para dar início aos seus estudos, é preciso que você realize o pagamento: clique aqui ({{ course_link }}) para acessar a página do curso, clique no botão "Pendente" e após isso em "Pagar com PagSeguro". Se estiver com dúvidas, é só entrar em contato.
-
-Trazemos já aqui as boas vindas e algumas dicas úteis:
-
-- Para entender melhor o funcionamento do curso e da plataforma, acesse Como funcionam o cursos Mupi (http://tecsaladeaula.com.br/course/conhecendo-a-nossa-plataforma/intro/).
-- Registre-se em nosso fórum (http://forum.tecsaladeaula.com.br/) para conhecer outros educadores que também estudam com a gente!
+Você se inscreveu em nosso curso {{ course_name }}.
+Caso você ainda não tenha pago o boleto, sua conta será bloqueada em uma semana.
+Se você tem alguma dúvida ou precisa de ajuda para finalizar a sua inscrição, responda a este email ou envie uma mensagem para inscricoes@readinweb.org
 
 Por fim, como é um curso online, organize seu tempo para dedicar-se às aulas e ter um bom aproveitamento :)
 
 Grande abraço,
-Paula e Ana
+Profa Denise Braga e professoras Paula e Ana
