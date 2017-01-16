@@ -124,7 +124,7 @@ class Course(models.Model):
 
         if not Class.objects.filter(course=self, students=student).exists():
             self.default_class.students.add(student)
-            send_mail('[RiW] Usuário Cadastrou-se em Curso', get_template('core/email/email_user_signed_up_course_support.txt').render(Context({'username': student.username, 'course_name': self.name, 'datetime': now.strftime("%d/%m/%Y - %H:%M"), 'email': student.email})), settings.EMAIL_SUPPORT, [settings.EMAIL_SUPPORT])
+            send_mail('[RiW-Timtec] Inscrição em curso', get_template('core/email/email_user_signed_up_course_support.txt').render(Context({'username': student.username, 'course_name': self.name, 'datetime': now.strftime("%d/%m/%Y - %H:%M"), 'email': student.email})), settings.EMAIL_SUPPORT, [settings.EMAIL_SUPPORT])
         if not CourseStudent.objects.filter(course=self, user=student).exists():
             if self.tuition == 0:
                 send_mail('Inscrição no Curso Read in Web', get_template('core/email/email_user_signed_up_free_course.txt').render(Context({'username': student.username, 'course_name': self.name})), settings.DEFAULT_FROM_EMAIL, [student.email])
