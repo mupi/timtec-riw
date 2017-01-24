@@ -387,7 +387,7 @@ wrapper-course-intro
                                         <a href="#" class="btn btn-lg btn-warning col-xs-12 js-login-required uppercase" data-toggle="modal" data-target="#modal-subscribe-success">Inscrição Pendente</a>
                                     {% else %}
                                         {% if course.name == "Leia em Inglês" %}
-                                            <a href="#" class="btn btn-lg btn-info col-xs-12 uppercase" ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
+                                            <a href="#" class="btn btn-lg btn-info js-login-required col-xs-12 uppercase" ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
                                         {% else %}
                                             <a href="#" class="btn btn-lg btn-info col-xs-12 js-login-required uppercase" ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
                                         {% endif %}
