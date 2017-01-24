@@ -391,7 +391,7 @@ class LessonDetailView(LoginRequiredMixin, DetailView):
         context = super(LessonDetailView, self).get_context_data(**kwargs)
         unit_content_type = ContentType.objects.get_for_model(Unit)
         course = self.object.course
-        lessons = list(course.public_lessons)
+        lessons = list(course.lessons.all())
         if lessons and self.object != lessons[-1]:
             index = lessons.index(self.object)
             context['next_url'] = reverse_lazy('lesson', args=[course.slug, lessons[index + 1].slug])
