@@ -132,7 +132,7 @@
 
                 $scope.answer.activity = $scope.currentActivity.id;
                 $scope.answer.$update({activityId: $scope.answer.activity}).then(function(answer){
-                    console.log(answer, answer.correct);
+                    // console.log(answer, answer.correct);
                     ga('send', 'event', 'activity', 'result', '', answer.correct);
                     $scope.currentUnit.progress = Progress.get({unit: $scope.currentUnit.id});
                     answer.updated = true;
@@ -143,10 +143,9 @@
 
             $scope.sendAnswerText = function() {
                 var progress;
-                console.log('mandando resposta texto');
                 progress = Progress.complete($scope.currentUnit.id);
                 $scope.currentUnit.progress = progress;
-                $scope.nextUnit();
+                $scope.nextStep();
             };
 
             $scope.nextStep = function(skipComment) {
