@@ -130,9 +130,11 @@ class CourseView(DetailView):
 
             user_is_enrolled = self.object.is_enrolled(user=user)
             user_enroll_is_pending = self.object.is_pending_enroll(user=user)
+            user_enroll_is_blocked = self.object.is_blocked(user=user)
 
             context['user_is_enrolled'] = user_is_enrolled
             context['user_enroll_is_pending'] = user_enroll_is_pending
+            context['user_enroll_is_blocked'] = user_enroll_is_blocked
 
         return context
 

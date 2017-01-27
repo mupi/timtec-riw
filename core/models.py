@@ -139,6 +139,9 @@ class Course(models.Model):
     def is_pending_enroll(self, user):
         return CourseStudent.objects.filter(course=self, user=user, status=CourseStudent.STATES[0][0]).exists()
 
+    def is_blocked(self, user):
+        return CourseStudent.objects.filter(course=self, user=user, status=CourseStudent.STATES[2][0]).exists()
+
     def get_thumbnail_url(self):
         if self.thumbnail:
             return self.thumbnail.url

@@ -284,10 +284,20 @@ wrapper-course-intro
                                     {% if user_enroll_is_pending %}
                                         <a href="#" class="btn btn-lg btn-warning col-xs-12 js-login-required uppercase" data-toggle="modal" data-target="#modal-subscribe-success">Inscrição Pendente</a>
                                     {% else %}
-                                        {% if course.name == "Leia em Inglês" %}
-                                            <a href="#" class="btn btn-lg btn-info col-xs-12 js-login-required uppercase" ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
+                                        {% if user_enroll_is_blocked %}
+                                            <div class="alert alert-danger" role="alert">
+                                              ATENÇÃO! O seu usuário encontra-se BLOQUEADO.
+                                            </div>
+                                            <p>
+                                              Caso acredite que isso seja um engano, envie um email para
+                                                <em>suporte@readinweb.org</em>
+                                            </p>
                                         {% else %}
-                                            <a href="#" class="btn btn-lg btn-info col-xs-12 js-login-required uppercase" ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
+                                            {% if course.name == "Leia em Inglês" %}
+                                                <a href="#" class="btn btn-lg btn-info col-xs-12 js-login-required uppercase" ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
+                                            {% else %}
+                                                <a href="#" class="btn btn-lg btn-info col-xs-12 js-login-required uppercase" ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
+                                            {% endif %}
                                         {% endif %}
                                     {% endif %}
                                 {% else %}
@@ -386,10 +396,20 @@ wrapper-course-intro
                                     {% if user_enroll_is_pending %}
                                         <a href="#" class="btn btn-lg btn-warning col-xs-12 js-login-required uppercase" data-toggle="modal" data-target="#modal-subscribe-success">Inscrição Pendente</a>
                                     {% else %}
-                                        {% if course.name == "Leia em Inglês" %}
-                                            <a href="#" class="btn btn-lg btn-info js-login-required col-xs-12 uppercase" ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
+                                        {% if user_enroll_is_blocked %}
+                                            <div class="alert alert-danger" role="alert">
+                                              ATENÇÃO! O seu usuário encontra-se BLOQUEADO.
+                                            </div>
+                                            <p>
+                                              Caso acredite que isso seja um engano, envie um email para
+                                                <em>suporte@readinweb.org</em>
+                                            </p>
                                         {% else %}
-                                            <a href="#" class="btn btn-lg btn-info col-xs-12 js-login-required uppercase" ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
+                                            {% if course.name == "Leia em Inglês" %}
+                                                <a href="#" class="btn btn-lg btn-info col-xs-12 js-login-required uppercase" ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
+                                            {% else %}
+                                                <a href="#" class="btn btn-lg btn-info col-xs-12 js-login-required uppercase" ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
+                                            {% endif %}
                                         {% endif %}
                                     {% endif %}
                                 {% else %}
