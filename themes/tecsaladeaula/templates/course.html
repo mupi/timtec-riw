@@ -293,7 +293,7 @@ wrapper-course-intro
                                                 <em>suporte@readinweb.org</em>
                                             </p>
                                         {% else %}
-                                            {% if course.name == "Leia em Inglês" %}
+                                            {% if course.name == "Leia em Inglês" or course.name == "Read in Mail" %}
                                                 <a href="#" class="btn btn-lg btn-info col-xs-12 js-login-required uppercase" ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
                                             {% else %}
                                                 <a href="#" class="btn btn-lg btn-info col-xs-12 js-login-required uppercase" ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
@@ -405,7 +405,7 @@ wrapper-course-intro
                                                 <em>suporte@readinweb.org</em>
                                             </p>
                                         {% else %}
-                                            {% if course.name == "Leia em Inglês" %}
+                                            {% if course.name == "Leia em Inglês" or course.name == "Read in Mail" %}
                                                 <a href="#" class="btn btn-lg btn-info col-xs-12 js-login-required uppercase" ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
                                             {% else %}
                                                 <a href="#" class="btn btn-lg btn-info col-xs-12 js-login-required uppercase" ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
@@ -607,7 +607,7 @@ wrapper-course-intro
                                             {% else %}
                                                 <span class="title">{{ lesson.name }}</span>
                                             {% endif %}
-                                            {% if lesson.course.name != "Leia em Inglês" %}
+                                            {% if lesson.course.name != "Leia em Inglês" and lesson.course.name != "Read in Mail" %}
                                               <div class="description">{{ lesson.desc|timtec_markdown }}</div>
                                             {% endif %}
                                         </p>
