@@ -95,6 +95,7 @@ class Course(models.Model):
     default_class = models.OneToOneField(Class, verbose_name=_('Default Class'), related_name='default_course', null=True, blank=True)
     tuition = models.DecimalField(_('Tuition'), decimal_places=2, max_digits=9, default=0.0)
     payment_url = models.TextField(_('Payment URL'), max_length=50, blank=True, null=True)
+    riw_style = models.BooleanField(default=False)
 
     class Meta:
         verbose_name = _('Course')
