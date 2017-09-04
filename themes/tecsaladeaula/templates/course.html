@@ -293,11 +293,18 @@ wrapper-course-intro
                                                 <em>suporte@readinweb.org</em>
                                             </p>
                                         {% else %}
-                                            {% if course.name == "Leia em Inglês" or course.name == "Read in Mail" %}
-                                                <a href="#" class="btn btn-lg btn-info col-xs-12 js-login-required uppercase" ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
-                                            {% else %}
-                                                <a href="#" class="btn btn-lg btn-info col-xs-12 js-login-required uppercase" ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
-                                            {% endif %}
+                                            {% if course.name == "LEITURA DE TEXTOS ACADÊMICOS EM INGLÊS VIA REDE" %}
+						<a href="https://www.extecamp.unicamp.br/dados.asp?sigla=%8Eg%D5%C2%5E%E2%DF%97&of=%F7%10%AB"
+						 class="btn btn-lg btn-info col-xs-12">{% trans "Subscribe" %}</a>
+					    {% else %}
+                                            	{% if course.name == "Leia em Inglês" or course.name == "Read in Mail" %}
+                                                	<a href="#" class="btn btn-lg btn-info col-xs-12 js-login-required uppercase" 
+							ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
+                                            	{% else %}
+                                                	<a href="#" class="btn btn-lg btn-info col-xs-12 js-login-required uppercase" 
+							ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
+                                            	{% endif %}
+					    {% endif %}
                                         {% endif %}
                                     {% endif %}
                                 {% else %}
@@ -405,11 +412,18 @@ wrapper-course-intro
                                                 <em>suporte@readinweb.org</em>
                                             </p>
                                         {% else %}
-                                            {% if course.name == "Leia em Inglês" or course.name == "Read in Mail" %}
-                                                <a href="#" class="btn btn-lg btn-info col-xs-12 js-login-required uppercase" ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
-                                            {% else %}
-                                                <a href="#" class="btn btn-lg btn-info col-xs-12 js-login-required uppercase" ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
-                                            {% endif %}
+                                            {% if course.name == "LEITURA DE TEXTOS ACADÊMICOS EM INGLÊS VIA REDE" %}
+						<a href="https://www.extecamp.unicamp.br/dados.asp?sigla=%8Eg%D5%C2%5E%E2%DF%97&of=%F7%10%AB"
+						 class="btn btn-lg btn-info col-xs-12">{% trans "Subscribe" %}</a>
+					    {% else %}
+                                            	{% if course.name == "Leia em Inglês" or course.name == "Read in Mail" %}
+                                                	<a href="#" class="btn btn-lg btn-info col-xs-12 js-login-required uppercase" 
+							ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
+                                            	{% else %}
+                                                	<a href="#" class="btn btn-lg btn-info col-xs-12 js-login-required uppercase" 
+							ng-click="enrollUser('{{ course.id }}')">{% trans "Subscribe" %}</a>
+                                            	{% endif %}
+					    {% endif %}
                                         {% endif %}
                                     {% endif %}
                                 {% else %}
