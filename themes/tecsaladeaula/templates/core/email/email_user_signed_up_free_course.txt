@@ -1,10 +1,8 @@
 Oi {{ username }},
 
 Você se inscreveu em nosso curso {{ course_name }}.
-O endereço da plataforma é http://readinweb.org
-Como é um curso online, organize seu tempo para dedicar-se às aulas e ter um bom aproveitamento :)
-
-Qualquer dúvida sinta-se a vontade para entrar em contato.
+Se você tem alguma dúvida ou precisa de ajuda para finalizar a sua inscrição, responda a este email ou envie uma mensagem para suporte@reaa
+dinweb.org .
 
 Grande abraço,
-Paula e Ana
+Equipe Read in Web

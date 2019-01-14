@@ -1,10 +1,8 @@
 Olá {{ username }},
 
 Você se inscreveu em nosso curso {{ course_name }}.
-Caso você ainda não tenha pago o boleto, sua conta será bloqueada em uma semana.
-Se você tem alguma dúvida ou precisa de ajuda para finalizar a sua inscrição, responda a este email ou envie uma mensagem para inscricoes@readinweb.org
-
-Por fim, como é um curso online, organize seu tempo para dedicar-se às aulas e ter um bom aproveitamento :)
+Se você tem alguma dúvida ou precisa de ajuda para finalizar a sua inscrição, responda a este email ou envie uma mensagem para suporte@reaa
+dinweb.org .
 
 Grande abraço,
-Profa Denise Braga e professoras Paula e Ana
+Equipe Read in Web
