@@ -18,10 +18,6 @@ wrapper-course-lesson
 
 {% block content %}
 
-{% if lesson.course.name == "LEITURA DE TEXTOS ACADÊMICOS EM INGLÊS VIA REDE" or lesson.course.name == "Read in Mail" %}
-  {% include "_lesson-riw.html"  with lesson=lesson %}
-{% else %}
-  {% include "_lesson-regular-course.html"  with lesson=lesson %}
-{% endif %}
+{% include "_lesson-riw.html"  with lesson=lesson %}
 
 {% endblock %}
