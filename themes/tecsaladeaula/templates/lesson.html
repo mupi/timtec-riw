@@ -18,6 +18,10 @@ wrapper-course-lesson
 
 {% block content %}
 
-{% include "_lesson-riw.html"  with lesson=lesson %}
+{% if lesson.course.name == "Read in Web" %}
+  {% include "_lesson-riw.html"  with lesson=lesson %}
+{% else %}
+  {% include "_lesson-regular-course.html"  with lesson=lesson %}
+{% endif %}
 
 {% endblock %}
